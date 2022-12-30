@@ -12,7 +12,14 @@ public class CurrentAccount extends BankAccount{
             throw new UserException("Insufficient Balance" );
 
         // minimum balance is 5000 by default. If balance is less than 5000, throw "Insufficient Balance" exception
+    }
 
+    public String getTradeLicenseId() {
+        return tradeLicenseId;
+    }
+
+    public void setTradeLicenseId(String tradeLicenseId) {
+        this.tradeLicenseId = tradeLicenseId;
     }
 
     public void validateLicenseId() throws Exception {
