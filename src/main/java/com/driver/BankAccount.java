@@ -79,15 +79,23 @@ public class BankAccount {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public double getBalance() {
         return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public double getMinBalance() {
         return minBalance;
     }
 
-    public int getAccount() {
-        return account;
+    public void setMinBalance(double minBalance) {
+        this.minBalance = minBalance;
     }
 }
