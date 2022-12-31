@@ -1,5 +1,5 @@
 package com.driver;
-class UserException extends Exception {
+ class UserException extends Exception {
     public UserException(String s)
     {
         // Call constructor of parent Exception
@@ -38,8 +38,6 @@ public class BankAccount {
         //Each digit of an account number can lie between 0 and 9 (both inclusive)
         //Generate account number having given number of 'digits' such that the sum of digits is equal to 'sum'
         //If it is not possible, throw "Account Number can not be generated" exception
-
-
     }
 
     public void deposit(double amount) {
@@ -54,10 +52,7 @@ public class BankAccount {
         else
             balance-=amount;
 
-
-
         // Remember to throw "Insufficient Balance" exception, if the remaining amount would be less than minimum balance
-
     }
     public void makeAccount(int ans,int digits,int sum){
         if(digits==0 && sum==0){

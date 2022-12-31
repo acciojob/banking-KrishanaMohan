@@ -9,8 +9,9 @@ public class Main {
         System.out.println(account1.getTradeLicenseId());
 
         SavingsAccount account2 = new SavingsAccount("Sohan",5000.00,2000,15.6);
-        //account2.withdraw(3000);
-        //account2.withdraw(6000);
+//        account2.withdraw(3000);
+//        account2.withdraw(6000);
+
         account2.withdraw(1000);
         System.out.println(account2.getSimpleInterest(2));
         System.out.println(account2.getCompoundInterest(3,1));
