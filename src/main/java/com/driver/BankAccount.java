@@ -1,11 +1,11 @@
 package com.driver;
- class UserException extends Exception {
-    public UserException(String s)
-    {
-        // Call constructor of parent Exception
-        super(s);
-    }
-}
+// class UserException extends Exception {
+//    public UserException(String s)
+//    {
+//        // Call constructor of parent Exception
+//        super(s);
+//    }
+//}
 
 public class BankAccount {
 
@@ -30,7 +30,7 @@ public class BankAccount {
 
 
         if(ans == null){
-            throw new UserException("Account Number can not be generated");
+            throw new Exception ("Account Number can not be generated");
         }
         else{
             return ans;
@@ -48,7 +48,7 @@ public class BankAccount {
 
     public void withdraw(double amount) throws Exception {
         if(balance-amount<minBalance)
-            throw new UserException("Insufficient Balance");
+            throw new Exception("Insufficient Balance");
         else
             balance-=amount;
 

@@ -9,7 +9,7 @@ public class CurrentAccount extends BankAccount{
         super(name,balance,5000);
         this.tradeLicenseId=tradeLicenseId;
         if(balance<500)
-            throw new UserException("Insufficient Balance" );
+            throw new Exception("Insufficient Balance" );
 
         // minimum balance is 5000 by default. If balance is less than 5000, throw "Insufficient Balance" exception
     }
@@ -30,7 +30,7 @@ public class CurrentAccount extends BankAccount{
         if(!check(tradeLicenseId)){
              String NewId= makeDifferId(tradeLicenseId);
              if(NewId.length()==0)
-                 throw new UserException("Valid License can not be generated");
+                 throw new Exception("Valid License can not be generated");
              else
                  tradeLicenseId=NewId;
         }
